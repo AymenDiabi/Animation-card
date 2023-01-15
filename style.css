@@ -36,7 +36,6 @@
   width: 100%;
   background-color: rgb(250, 190, 61);
   position: relative;
-  z-index: 2;
 }
 
 .pyramid {
@@ -46,6 +45,21 @@
   margin-inline: auto;
   position: absolute;
   top: -64.2%;
-  left: 50%;
-  transform: translate(-50%,-50%);
+  left: 38%;
+    transform: translate(-50%,-50%);
+    clip-path: polygon(83% 8%, 0% 100%, 100% 100%);
+  z-index: -2;
+}
+
+.pyramid2 {
+  height: 80px;
+  width: 50%;
+  background-color: rgb(179, 177, 177);
+  margin-inline: auto;
+  position: absolute;
+  top: -64.2%;
+  left: 79%;
+    transform: translate(-50%,-50%);
+    clip-path: polygon(0% 8%, 0% 100%, 65% 100%);
+  z-index: -2;
 }
