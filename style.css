@@ -38,6 +38,17 @@
   position: relative;
 }
 
+.sun {
+  height: 35px;
+  width: 35px;
+  background-color: yellow;
+  position: absolute;
+  top: 5%;
+  left: 45%;
+  border-radius: 50%;
+  transform: matrix3d();
+}
+
 .pyramid {
   height: 80px;
   width: 50%;
@@ -59,7 +70,7 @@
   position: absolute;
   top: -64.2%;
   left: 79%;
-    transform: translate(-50%,-50%);
-    clip-path: polygon(0% 8%, 0% 100%, 65% 100%);
+  transform: translate(-50%,-50%);
+  clip-path: polygon(0% 8%, 0% 100%, 65% 100%);
   z-index: -2;
 }
