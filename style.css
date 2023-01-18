@@ -43,10 +43,12 @@
   width: 35px;
   background-color: yellow;
   position: absolute;
-  top: 5%;
-  left: 45%;
+  top: 70%;
+  left: 40%;
+  transform: rotate(-62deg) translateY(-135px);
+  align-self: center;
   border-radius: 50%;
-  transform: matrix3d();
+  animation: spin 3s cubic-bezier(0.59, 0.65, 0.54, 0.13) infinite;
 }
 
 .pyramid {
@@ -60,6 +62,7 @@
     transform: translate(-50%,-50%);
     clip-path: polygon(83% 8%, 0% 100%, 100% 100%);
   z-index: -2;
+  animation: light 3s linear infinite;
 }
 
 .pyramid2 {
@@ -73,4 +76,34 @@
   transform: translate(-50%,-50%);
   clip-path: polygon(0% 8%, 0% 100%, 65% 100%);
   z-index: -2;
+  animation: opposite 3s linear infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(-65deg) translateY(-135px);
+  }
+  100% {
+    transform: rotate(65deg) translateY(-135px);
+  }
+}
+
+@keyframes light {
+  from {
+    background-color: #fff;
+  }
+
+  to {
+    background-color: rgb(196, 194, 194);
+  }
+}
+
+@keyframes opposite {
+  from {
+    background-color: rgb(155, 152, 152);
+  }
+
+  to {
+    background-color: #fff;
+  }
 }
